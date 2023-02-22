@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Anish Kumar</title>
+	<title>Anish Kumar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-  <style type = "text/css"></style>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<h1>Anish Kumar</h1>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>Hi, I'm Anish Kumar. I'm a web developer based in San Francisco.</p>
+		</section>
+		<section id="portfolio">
+			<h2>My Portfolio</h2>
+			<ul>
+				<li><a href="#">Project 1</a></li>
+				<li><a href="#">Project 2</a></li>
+				<li><a href="#">Project 3</a></li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form action="submit-form.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Anish Kumar</p>
+	</footer>
 </body>
 </html>
